@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="footer.css"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="navbar.css">
+    <!-- this is for twitter icons -->
+    <script src="https://kit.fontawesome.com/3d20c433e1.js" crossorigin="anonymous"></script>
+
+    <style>
+      .nav-container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <nav class="navbar">
+      <img src="https://ticket-booking-blue.vercel.app/images/4.jpeg" alt="" style="border-radius: 50%; height: 35px; width: 35px;">
+      <div class="logo" style="font-size: 20px;">Ticket Marketplace</div>
+
+      <!-- Toggle Button (Visible on Small Screens) -->
+      <button id="navToggle">☰</button>
+
+      <!-- Navbar Links -->
+      <div id="navLinks">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+          <a href="buy.html"><i class="fas fa-ticket-alt"></i> Buy Ticket</a>
+          <a href="sell.html"><i class="fas fa-tags"></i> Sell</a>
+          <a href="contactus.html"><i class="fas fa-envelope"></i> Contact</a>
+          <a href="contributor.html"><i class="fas fa-users"></i> Contributors</a>
+          <a href="client/login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+      </div>
+
+      <!-- Dark Mode Button -->
+      <button id="darkModeToggle" style="width: 40px; height: 40px;">🌙</button>
+  </nav>
+    <script>
+      const darkModeToggle = document.getElementById("darkModeToggle");
+      const body = document.querySelector("body");
+      if (darkModeToggle) {
+        darkModeToggle.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+          if (body.classList.contains("dark-mode")) {
+            darkModeToggle.innerHTML = "🔆";
+          } else {
+            darkModeToggle.innerHTML = "🌙";
+          }
+        });
+      }
+      // change icon of the dark/light mode
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+        // Special effect for hamburger icon
+        const bars = menuToggle.querySelectorAll(".bar");
+        bars.forEach((bar, index) => {
+          if (menuToggle.classList.contains("active")) {
+            bar.style.transform =
+              index === 1
+                ? "scale(0)"
+                : `rotate(${index === 0 ? "45deg" : "-45deg"})`;
+          } else {
+            bar.style.transform = "none";
+          }
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (event) => {
+        if (
+          !navLinks.contains(event.target) &&
+          !menuToggle.contains(event.target)
+        ) {
+          navLinks.classList.remove("active");
+          menuToggle.classList.remove("active");
+          menuToggle.querySelectorAll(".bar").forEach((bar) => {
+            bar.style.transform = "none";
+          });
+        }
+      });
+    </script>
+    <section id="about-us">
+      <div class="about-container">
+          <h1>Privacy Policy</h1>
+  
+          <div class="policy-section">
+              <h2>Welcome to Ticket Booking!</h2>
+              <p>
+                  Your one-stop solution for booking bus and train tickets with ease. 
+                  Our platform offers a seamless experience for travelers, providing access 
+                  to various transportation options. We strive to make your journey hassle-free, 
+                  whether you're planning a short trip or a long adventure. With 24/7 customer 
+                  support and real-time updates, we ensure that you're always informed and 
+                  comfortable on the go.
+              </p>
+          </div>
+  
+          <div class="policy-section">
+              <h2>Commitment to Privacy</h2>
+              <p>
+                  At Ticket Booking, we are committed to protecting your privacy. This 
+                  policy outlines how we collect, use, and safeguard your personal 
+                  information when you visit our website to book tickets. We collect 
+                  data such as your name, email address, and payment information solely 
+                  for processing your bookings and providing you with a seamless 
+                  experience.
+              </p>
+              <p>
+                  Your information is stored securely and is only accessible to authorized 
+                  personnel. We do not sell or share your data with third parties without 
+                  your consent, except as required by law or to fulfill your requests. 
+                  By using our website, you agree to the collection and use of your 
+                  information in accordance with this policy.
+              </p>
+          </div>
+  
+          <div class="contact-info">
+              <h2>Contact Us</h2>
+              <p>
+                  If you have any questions or concerns about our privacy practices, please 
+                  contact us at: 
+                  <a href="tel:+919685478526">+91 9685478526</a>
+              </p>
+          </div>
+      </div>
+  </section>
+  
+
+    <footer class="footer-container">
+      <div class="footer-top">
+        
+        <div class="footer-logo-section">
+          <a href="#"> <img src="./images/3.jpeg" alt="easyJet holidays logo" class="footer-logo"></a>
+          <p style="color: #b5fdf4;" >Affordable adventures, unforgettable memories—explore with ease.</p>
+          <p style="color: #dcfffa;" class="follow-us">FOLLOW US ON HERE:</p>
+          <div class="social-icons">
+  
+              <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.twitter.com" ><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+  
+          </div>
+        </div>
+    
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>HELPFUL LINKS</h4>
+            <ul>
+              <li><a href="help.html">Help Centre</a></li>
+              <li><a href="#">Special Assistance</a></li>
+              <li><a href="#">Download The App</a></li>
+              <li><a href="book_condition.html">Booking Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>ABOUT US</h4>
+            <ul>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Investors</a></li>
+  
+              <li><a href="#">Modern Slavery Act</a></li>
+  
+              <li><a href="ModernSlaveryAct.html">Modern Slavery Act</a></li>
+  
+              <li><a href="terms.html">Terms Of Use</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>KEEPING SAFE</h4>
+            <ul>
+              <li><a href="#">ATOL Protected</a></li>
+              <li><a href="travelAware.html">Travel Aware</a></li>
+              <li><a href="fcdoTravel.html">FCDO Travel Advice</a></li>
+              <li><a href="#">ABTA</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>FIND US</h4>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="GroupCookieNotice.html">Group Cookie Notice</a></li>
+              <li><a href="privacy.html">Privacy And Policy</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Holiday Type</a></li>
+          <li><a href="#">Holiday Deals</a></li>
+          <li><a href="#">Popular Counters</a></li>
+          <!-- <li><a href="#">Flight Only</a></li> -->
+          <li><a href="#">Top Hotels</a></li>
+        </ul>
+      </div>
+    </footer>
+  
+    <div class="gtranslate_wrapper"></div>
+    <script>
+      window.gtranslateSettings = {
+        default_language: "en",
+        detect_browser_language: true,
+        wrapper_selector: ".gtranslate_wrapper",
+      };
+    </script>
+     <script>
+      //toggle chatbot function
+      function toggleChatbot() {
+        const chatbotContainer = document.getElementById("chatbot-container");
+        chatbotContainer.classList.toggle("chatbot-show");
+    }
+
+      // Toggle Navbar Links
+      const navToggle = document.getElementById('navToggle');
+      const navlinks = document.getElementById('navLinks');
+
+      navToggle.addEventListener('click', () => {
+          navlinks.style.display = navlinks.style.display === 'flex' ? 'none' : 'flex';
+      });
+
+      // Ensure navbar links are visible on large screens
+      window.addEventListener('resize', () => {
+          if (window.innerWidth > 768) {
+              navlinks.style.display = 'flex'; // Show links on large screens
+          } else {
+              navlinks.style.display = 'none'; // Hide links on small screens
+          }
+      });
+
+      // Set initial state based on the current window size
+      if (window.innerWidth > 768) {
+          navlinks.style.display = 'flex'; // Show links if starting on a large screen
+      } else {
+          navlinks.style.display = 'none'; // Hide links if starting on a small screen
+      }
+  </script>
+    <script
+      src="https://cdn.gtranslate.net/widgets/latest/float.js"
+      defer
+    ></script>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+#about-us {
+    background-image: url("your-background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light container for contrast */
+    color: #333; /* Darker text for readability */
+    padding: 40px;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.about-container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+#about-us h1 {
+    font-size: 2.8rem; /* Slightly smaller, balanced size */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Reduced letter spacing */
+    color: #007bff; /* Vibrant accent color */
+}
+
+#about-us h2{
+  color: #007bff;
+}
+#about-us p {
+    color: #333; /* Dark text for better readability */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+.contact-info {
+    margin-top: 30px; /* More space for emphasis */
+    font-size: 1.1rem; /* Consistent text size */
+    color: #007bff; /* Matching accent color */
+}
+
+.contact-info a {
+  color: #007bff;/* Consistent link color */
+    text-decoration: none; /* Clean appearance */
+    font-weight: bold; /* Bold for emphasis */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+}
+
+.contact-info a:hover {
+  color: #007bff;/* Darker accent on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    #about-us h1 {
+        font-size: 2.2rem; /* Responsive heading size */
+    }
+
+    #about-us p {
+        font-size: 1rem; /* Responsive paragraph size */
+    }
+
+    .contact-info {
+        font-size: 1rem; /* Responsive size for contact info */
+    }
+}
+
+</style>

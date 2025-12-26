@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Terms of Use - Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css"> 
+    <style>
+
+        /* General Footer Styling */
+  .footer-container {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Logo and Tagline */
+  .footer-logo-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+  }
+  .footer-logo-section p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+  .follow-us {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  /* Social Media Icons */
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #12e9cc;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  .social-icons a:hover {
+    color: #76b2ab;
+  }
+
+  /* Footer Link Sections */
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 100px;
+  }
+  .footer-column {
+    flex-basis: 20%;
+    margin-bottom: 10px;
+  }
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #12e9cc;
+  }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  .footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Footer Bottom Links */
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-bottom ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .footer-bottom ul li a {
+    color: #12e9cc;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .footer-bottom ul li a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-column {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+        /* General styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: box-shadow 0.3s ease;
+        }
+        .container:hover { box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); }
+        .toc {
+            flex-basis: 25%;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 12px;
+            margin-right: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .toc h2 {
+            font-size: 1.6rem;
+            color: #004085;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .toc ul { list-style: none; padding: 0; }
+        .toc ul li { margin-bottom: 12px; }
+        .toc ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            padding-left: 5px;
+        }
+        .toc ul li a:hover { color: #0056b3; padding-left: 10px; font-weight: bold; }
+        .main-content { flex-basis: 75%; }
+        h1, h2 { color: #004085; }
+        h1 {
+            font-size: 2.4rem;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        h2:hover { color: #0056b3; }
+        p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+        p:hover { color: #333; }
+        ul { margin-left: 20px; padding-left: 20px; list-style: disc; }
+        li { margin-bottom: 10px; }
+        a { color: #007bff; text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: #0056b3; text-decoration: underline; }
+        html { scroll-behavior: smooth; }
+        @media (max-width: 768px) {
+            .container { flex-direction: column; padding: 15px; }
+            .toc { margin-bottom: 20px; margin-right: 0; width: 100%; position: relative; }
+            .main-content { width: 100%; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            p { font-size: 0.95rem; }
+        }
+        /* Navbar Styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .navbar .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo-image {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .navbar .nav-links li {
+            margin: 0 10px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html" id="logo-href">
+            <div class="logo-container">
+                <img src="images/4.jpeg" alt="Ticket Booking Logo" class="logo-image">
+                <div class="logo">Ticket Booking</div>
+            </div>
+        </a>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="buy.html">Buy Ticket</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="contributor.html">Our Contributors</a></li>
+                <li><a href="/client/register.html" class="login-btn">Login</a></li>
+            </ul>
+            <button id="darkModeToggle">🌙</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section1">1. Acceptance of Terms</a></li>
+                <li><a href="#section2">2. Modifications to Terms</a></li>
+                <li><a href="#section3">3. User Responsibilities</a></li>
+                <li><a href="#section4">4. Intellectual Property</a></li>
+                <li><a href="#section5">5. User-Generated Content</a></li>
+                <li><a href="#section6">6. Privacy</a></li>
+                <li><a href="#section7">7. Limitation of Liability</a></li>
+                <li><a href="#section8">8. Third-Party Links</a></li>
+                <li><a href="#section9">9. Termination</a></li>
+                <li><a href="#section10">10. Governing Law</a></li>
+                <li><a href="#section11">11. Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Ticket Booking - Terms of Use</h1>
+            <h2 id="section1">1. Acceptance of Terms</h2>
+            <p>By accessing and using the Ticket Booking website, you agree to comply with and be bound by these terms and conditions. These terms form a legally binding agreement between you and Ticket Booking. If you do not agree to these terms, please refrain from using our website and services. </p>
+            <h2 id="section2">2. Modifications to Terms</h2>
+            <p>Ticket Booking reserves the right to update or modify these terms at any time without prior notice. Such changes will take effect immediately upon being posted on this page. It is your responsibility to review these terms periodically. Continued use of the website after modifications have been made constitutes acceptance of the updated terms. </p>
+            <h2 id="section3">3. User Responsibilities</h2>
+            <p>As a user, you are responsible for ensuring that your use of the Ticket Booking platform complies with all applicable laws and regulations. You agree to refrain from:</p>
+            <ul>
+                <li>Engaging in any illegal activities or using the platform in a way that infringes the rights of others.</li>
+                <li>Posting or transmitting harmful, threatening, or offensive content that could harm other users or the platform.</li>
+                <li>Attempting to use the platform for unauthorized commercial purposes, such as advertising or solicitation.</li>
+                <li>Trying to gain unauthorized access to our website, servers, or data systems, or disrupting the security of the platform.</li>
+            </ul>
+            <h2 id="section4">4. Intellectual Property</h2>
+            <p>All content, graphics, logos, trademarks, and other intellectual property displayed on Ticket Booking are the exclusive property of Ticket Booking or its licensors. Users are prohibited from using, copying, reproducing, or distributing any material on this website without prior written consent.</p>
+            <h2 id="section5">5. User-Generated Content</h2>
+            <p>By submitting content to Ticket Booking, such as comments, reviews, or feedback, you grant us a non-exclusive, royalty-free, perpetual, and worldwide license to use, display, modify, and distribute this content across our platform. Content submitted by users must not violate the intellectual property rights of others or contain harmful or offensive material. </p>
+            <h2 id="section6">6. Privacy</h2>
+            <p>Ticket Booking is committed to protecting your privacy. Any personal information collected during your use of the website is subject to our Privacy Policy. Our Privacy Policy explains how we collect, store, and use your data, and we encourage you to review it to understand your rights and our obligations in safeguarding your information. </p>
+            <h2 id="section7">7. Limitation of Liability</h2>
+            <p>While we strive to provide accurate and reliable information, Ticket Booking does not guarantee the accuracy, completeness, or timeliness of content on this website. </p>
+            <h2 id="section8">8. Third-Party Links</h2>
+            <p>Ticket Booking may contain links to third-party websites for informational purposes. We are not responsible for the content, privacy policies, or practices of any third-party websites. Access to these sites is at your own risk, and we recommend reviewing the terms and privacy policies of any third-party websites before engaging with them. We do not endorse any information, products, or services provided by third-party websites linked to from our platform.</p>
+            <h2 id="section9">9. Termination</h2>
+            <p>Ticket Booking reserves the right to terminate or suspend your access to the website at its sole discretion without prior notice. We may take such action if we believe that you have violated these terms or engaged in any conduct that may harm the platform or other users. </p>
+            
+            <h2 id="section11">10. Contact Us</h2>
+            <p>For any questions or concerns regarding these Terms of Use or any other aspect of Ticket Booking, please contact our support team at contact@ticketbooking.com. We are here to address your concerns and ensure that you have a positive experience with our platform.</p>
+        </div>
+    </div>
+
+<footer class="footer-container">
+      <div class="footer-top">
+        
+        <div class="footer-logo-section">
+          <a href="#"> <img src="./images/3.jpeg" alt="easyJet holidays logo" class="footer-logo"></a>
+          <p style="color: #b5fdf4;" >Affordable adventures, unforgettable memories—explore with ease.</p>
+          <p style="color: #dcfffa;" class="follow-us">FOLLOW US ON HERE:</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" ><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+    
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>HELPFUL LINKS</h4>
+            <ul>
+              <li><a href="help.html">Help Centre</a></li>
+              <li><a href="#">Special Assistance</a></li>
+              <li><a href="#">Download The App</a></li>
+              <li><a href="book_condition.html">Booking Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>ABOUT US</h4>
+            <ul>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Investors</a></li>
+              <li><a href="ModernSlaveryAct.html">Modern Slavery Act</a></li>
+  
+              <li><a href="terms.html">Terms Of Use</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>KEEPING SAFE</h4>
+            <ul>
+              <li><a href="#">ATOL Protected</a></li>
+              <li><a href="travelAware.html">Travel Aware</a></li>
+              <li><a href="fcdoTravel.html">FCDO Travel Advice</a></li>
+              <li><a href="#">ABTA</a></li>
+            </ul>
+          </div>
+    
+          <div class="footer-column">
+            <h4>FIND US</h4>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="GroupCookieNotice.html">Group Cookie Notice</a></li>
+              <li><a href="privacy.html">Privacy And Policy</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Holiday Type</a></li>
+          <li><a href="#">Holiday Deals</a></li>
+          <li><a href="#">Popular Counters</a></li>
+          <!-- <li><a href="#">Flight Only</a></li> -->
+          <li><a href="#">Top Hotels</a></li>
+        </ul>
+      </div>
+    </footer>
+
+</body>
+</html>
